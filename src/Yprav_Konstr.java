@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Yprav_Konstr {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("nomer DZ: ");
+        System.out.print("Введите номер ДЗ 3.1: ");
 
         Integer dz = null;
         if (scan.hasNextInt()) {
@@ -18,11 +18,12 @@ public class Yprav_Konstr {
                 break;
             case (3):
                 dz3();
+                break;
             case (4):
                 dz4();
+                break;
         }
-
-
+        scan.close();
     }
 
     private static void dz4() {
@@ -53,12 +54,13 @@ public class Yprav_Konstr {
             case (6):
                 System.out.println("6-Синий");
                 break;
-            case(7):
+            case (7):
                 System.out.println("7-Фиолетовый");
                 break;
             default:
                 System.out.println("нет такого номера радуги!");
         }
+        scan.close();
     }
 
     private static void dz3() {
@@ -81,6 +83,7 @@ public class Yprav_Konstr {
         } else {
             System.out.println("Холодно");
         }
+        scan.close();
     }
 
     private static void dz2() {
@@ -103,6 +106,7 @@ public class Yprav_Konstr {
         } else if (us == 9 || us == 10 || us == 11) {
             System.out.println("Осень'");
         } else System.out.println("Нет такого месяца");
+        scan.close();
     }
 
     private static void dz1() {
@@ -140,6 +144,7 @@ public class Yprav_Konstr {
             default:
                 System.out.println("Не верно ввели месяц!");
         }
+        scan.close();
     }
 }
 
