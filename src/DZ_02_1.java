@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Yprav_Konstr {
+public class DZ_02_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите номер ДЗ 3.1: ");
