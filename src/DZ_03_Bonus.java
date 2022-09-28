@@ -33,15 +33,12 @@ public class DZ_03_Bonus {
 //        Выведите на экран первые 11 членов последовательности Фибоначчи.
 //        0 1 1 2 3 5 8 13 21 34 ...
 
-        int feb1 = 0;
-        int feb2 = 0;
-        int feb3 = 1;
-        for (int i = 0; i <= 11; ) {
-            System.out.print(feb1 + " ");
+        for (int feb1, feb2 = 0, feb3 = 1, i = 0; i < 11; i++) {
+
             feb1 = feb2;
             feb2 = feb3;
             feb3 = feb1 + feb2;
-            i++;
+            System.out.print(feb1 + " ");
         }
     }
 }
