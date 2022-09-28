@@ -89,6 +89,7 @@ public class DZ_02_1 {
     private static void dz2() {
         //Написать программу для вывода названия поры года по номеру месяца.
         //При решении используйте оператор if-else-if.
+        System.out.println("Выводит названия поры года по номеру месяца.(if-esle-if");
 
         Scanner scan = new Scanner(System.in);
         System.out.print("укажите месяц: ");
@@ -112,6 +113,7 @@ public class DZ_02_1 {
     private static void dz1() {
         //Написать программу для вывода названия поры года по номеру месяца.
         //При решении используйте оператор switch-case.
+        System.out.println("Выводит названия поры года по номеру месяца.(Switch-case");
 
         Scanner scan = new Scanner(System.in);
         System.out.print("укажите месяц: ");

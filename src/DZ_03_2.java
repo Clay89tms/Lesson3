@@ -38,6 +38,7 @@ public class DZ_03_2 {
     private static void dz6() {
 //        Составьте программу, выводящую на экран квадраты чисел от 10 до 20
 //        включительно.
+        System.out.println("Квадраты чичел от 10 до 20.");
         for(int i = 10; i<=20; i++){
             int y = i*i;
             System.out.print(y + " ");
@@ -46,6 +47,7 @@ public class DZ_03_2 {
 
     private static void dz5() {
 //        Вывести 10 первых чисел последовательности 0, -5,-10,-15..
+        System.out.println("10 первых чисел последовательности 0, -5,-10,-15..");
         int y = 0;
         for (int i = 0; i < 10; i++) {
             System.out.print(y + " ");
@@ -58,6 +60,7 @@ public class DZ_03_2 {
 //        последовательность:
 //        7 14 21 28 35 42 49 56 63 70 77 84 91 98.
 //        В решении используйте цикл while.
+        System.out.println("Вывод последовательности 7 14 21 28 35 42 49 56 63 70 77 84 91 98.");
         for (int i = 7; i <= 98; i += 7) {
             System.out.print(i + " ");
         }
@@ -69,8 +72,9 @@ public class DZ_03_2 {
 //        введенного пользователем числа.
 //        Для ввода числа воспользуйтесь классом Scanner.
 
+
         Scanner sc = new Scanner(System.in);
-        System.out.print("До какого числа сложить все положительные целые числа: ");
+        System.out.print("Вывод на экран суммы чистел от 1 до ");
 
         Integer us = null;
         if (sc.hasNextInt()) {
@@ -89,6 +93,7 @@ public class DZ_03_2 {
     private static void dz2() {
 //        Необходимо вывести на экран числа от 5 до 1.
 //        При решении используйте операцию декремента (--).
+        System.out.println("Вывод на экран чисел от 5 до 1.");
         for (int i = 5; i > 0; i--) {
             System.out.print(i + " ");
         }
@@ -97,6 +102,7 @@ public class DZ_03_2 {
     private static void dz1() {
         //      При помощи цикла for вывести на экран нечетные числа от 1 до 99.
         //      При решении используйте операцию инкремента (++).
+        System.out.println("Вывод на экран всех нечетных чисел от 1 до 99");
         for (int i = 1; i < 100; i++) {
             if ((i % 2 == 0)) {
                 continue;
