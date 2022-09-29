@@ -9,28 +9,30 @@ public class DZ_03_2 {
         Integer dz = null;
         if (sc.hasNextInt()) {
             dz = sc.nextInt();
-        }
-        switch (dz) {
-            case (1):
-                dz1();
-                break;
-            case (2):
-                dz2();
-                break;
-            case (3):
-                dz3();
-                break;
-            case (4):
-                dz4();
-                break;
-            case (5):
-                dz5();
-                break;
-            case (6):
-                dz6();
-                break;
-            default:
-                System.out.println("Отсутствует указанный номер задачи");
+            switch (dz) {
+                case (1):
+                    dz1();
+                    break;
+                case (2):
+                    dz2();
+                    break;
+                case (3):
+                    dz3();
+                    break;
+                case (4):
+                    dz4();
+                    break;
+                case (5):
+                    dz5();
+                    break;
+                case (6):
+                    dz6();
+                    break;
+                default:
+                    System.out.println("Отсутствует указанный номер задачи");
+            }
+        } else {
+            System.out.println("Ввели не целочисленное значение.");
         }
         sc.close();
     }
@@ -39,8 +41,8 @@ public class DZ_03_2 {
 //        Составьте программу, выводящую на экран квадраты чисел от 10 до 20
 //        включительно.
         System.out.println("Квадраты чичел от 10 до 20.");
-        for(int i = 10; i<=20; i++){
-            int y = i*i;
+        for (int i = 10; i <= 20; i++) {
+            int y = i * i;
             System.out.print(y + " ");
         }
     }
@@ -51,7 +53,7 @@ public class DZ_03_2 {
         int y = 0;
         for (int i = 0; i < 10; i++) {
             System.out.print(y + " ");
-            y -=5;
+            y -= 5;
         }
     }
 
@@ -79,14 +81,14 @@ public class DZ_03_2 {
         Integer us = null;
         if (sc.hasNextInt()) {
             us = sc.nextInt();
+            if (us > 0) {
+                int sum = 0;
+                for (int i = 0; (i <= us); i++) {
+                    sum += i;
+                }
+                System.out.println("Сумма всех положительных целых чисел равна = " + sum);
+            } else System.out.println("Введено отрицательное число. Попробуйте снова.");
         }
-        if (us > 0) {
-            int sum = 0;
-            for (int i = 0; (i <= us); i++) {
-                sum += i;
-            }
-            System.out.println("Сумма всех положительных целых чисел равна = " + sum);
-        } else System.out.println("Введено отрицательное число. Попробуйте снова.");
         sc.close();
     }
 

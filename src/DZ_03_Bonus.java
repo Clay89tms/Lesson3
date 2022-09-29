@@ -7,14 +7,16 @@ public class DZ_03_Bonus {
         Integer dz3b = null;
         if (sc.hasNextInt()) {
             dz3b = sc.nextInt();
-        }
-        switch (dz3b) {
-            case (1):
-                dz1();
-                break;
-            case (2):
-                dz2();
-                break;
+            switch (dz3b) {
+                case (1):
+                    dz1();
+                    break;
+                case (2):
+                    dz2();
+                    break;
+            }
+        } else {
+            System.out.println("Ввели не целочисленное значение.");
         }
         sc.close();
     }
