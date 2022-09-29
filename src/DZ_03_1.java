@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DZ_02_1 {
+public class DZ_03_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите номер ДЗ 3.1: ");
@@ -8,21 +8,25 @@ public class DZ_02_1 {
         Integer dz = null;
         if (scan.hasNextInt()) {
             dz = scan.nextInt();
+            switch (dz) {
+                case (1):
+                    dz1();
+                    break;
+                case (2):
+                    dz2();
+                    break;
+                case (3):
+                    dz3();
+                    break;
+                case (4):
+                    dz4();
+                    break;
+            }
+
+        } else {
+            System.out.println("Ввели не целочисленное значение.");
         }
-        switch (dz) {
-            case (1):
-                dz1();
-                break;
-            case (2):
-                dz2();
-                break;
-            case (3):
-                dz3();
-                break;
-            case (4):
-                dz4();
-                break;
-        }
+
         scan.close();
     }
 
